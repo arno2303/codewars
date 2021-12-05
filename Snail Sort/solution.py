@@ -44,3 +44,11 @@ def snail(snail_map):
         col_begin += 1
 
     return result
+
+
+def snail2(matrix):
+    result = list
+    while len(matrix):
+        result += matrix.pop(0)
+        matrix = list(zip(*matrix))[::-1]
+    return result
